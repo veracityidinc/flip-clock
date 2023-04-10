@@ -11,6 +11,9 @@
         font-family: Arial, Verdana, sans-serif;
         font-weight: bold;
         font-size: var(--digits-size, 70px);
+        display: var(--clock-display, flex);
+        align-items: var(--clock-align, center);
+        justify-content: var(--clock-justify, flex-start);
       }
       #clock .num {
         position: relative;
@@ -30,6 +33,7 @@
         width: 100%;
         height: 3px;
         background-color: #111;
+        opacity: var(--digits-opacity, 0);
       }
       #clock b {
         color: #333;
